@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Photo Gallery</h1>
+      <h2>Explore the Collection</h2>
+      <div class="controls">
+        <input type="text" id="search" placeholder="Search images..." />
+        <button id="themeToggle">🌙 Dark Mode</button>
+      </div>
+    </header>
+
+    <div class="image-container">
+      <img src="design.avif" alt="Design" data-category="art" />
+      <img src="mount.avif" alt="Mountain" data-category="nature" />
+      <img src="museum.avif" alt="Museum" data-category="architecture" />
+      <img src="photo1.avif" alt="Tree" data-category="nature" />
+      <img src="bird.avif" alt="Bird" data-category="wildlife" />
+      <img src="beach.avif" alt="Beach" data-category="nature" />
+      <img src="flower.avif" alt="Flower" data-category="nature" />
+      <img src="road.avif" alt="Road" data-category="travel" />
+      <img src="photo3.avif" alt="Sunset" data-category="nature" />
+      <img src="man.avif" alt="Man Riding" data-category="people" />
+    </div>
+
+    <!-- Modal View -->
+    <div class="image-modal">
+      <span class="close-btn">&times;</span>
+      <button class="prev-btn">&#10094;</button>
+      <img src="" alt="" />
+      <p class="caption"></p>
+      <button class="next-btn">&#10095;</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
